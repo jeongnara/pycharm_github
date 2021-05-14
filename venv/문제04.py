@@ -1,12 +1,11 @@
 def solution(arr):
-    left = 0
-    right = len(arr) - 1
+     left = 0
+     right = len(arr) - 1
 
-     while @@@:
+     while left < len(arr)/2:
          # arr[left]과 arr[right]의 값을 서로 바꿈
-         temp = arr[left]
-         arr[left] = arr[right]
-         arr[right] = temp
+
+         arr[left], arr[right] = arr[right], arr[left]
 
          left += 1
          right -= 1
